@@ -1,29 +1,247 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+  <ion-content>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
+    <ion-header id="sp-header">
+      
+        <div class="container">
+        <div class="sp-column ">
+    <ul class="menu">
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill">Oh Hi Market! </a>
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill" href="#a-propos-nous" >Services</a>
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill" href="#nos-services" >Your benefits</a>
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill" href="http://localhost:8100/suivie/" target="_self" >Country Manager</a>
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill" href="#contacter" >login</a>     
+           <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill" href="http://localhost:8100/connexion/" target="_self">
+            <ion-button class="txt" fill="outline">Get Started</ion-button></a>        
+    </ul>
+        </div> 
+        </div>    
+    </ion-header>
+    <ion-header id="header" class="header" data-bs-ride="carousel">
+     <div class="container h-100 d-flex align-items-center carousel-inner" class="vh-100 carousel slide" >
+         <div class="text-center carousel-item active">
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             
+            <h2 class="text-capitalize text-white">Say "Hi!" to new markets for your product</h2>
+        
+    <div class="parag">
+        <h6> The platform that helps and supports other companies to enter new markets by connecting marketing PR and digital directly to business clients</h6>
+    </div> 
+    </div>
+     </div>
+    </ion-header>
 
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
 
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon aria-hidden="true" slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
-  </ion-split-pane>
+
+<ion-header class="propos" id="a-propos-nous">
+    <section class="page-section" >
+    <div class="container">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>          
+                        <div class="col-lg-8 order-lg-1 text-center text-lg-start">
+                            <h3 >You get a personal Country Manager</h3>                                
+                            <h6>a qualified country manager assigned to your company wil track filing deadlines, suggest tax exemptions and prepare reports.
+                                 </h6> <br/>
+                                 <br/>
+                            <h4>Personal Manager</h4>
+                            <h6> The platform assings a personal country manager with local expertise and high qualification
+                            </h6>                    </div>
+                    </ion-col>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <ion-col>                            
+            <div class="col-lg-6 orger-lg-0">
+                <ion-avatar>
+                    <img  [src]=""  *ngIf="" class="image"/>
+                    </ion-avatar>
+            </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div> 
+    </section>
+</ion-header>
+
+
+
+
+<ion-header id="bas" >
+    <section class="page-section accueil" id="nos-services">
+        <div class="container">
+            <div class="title pt-3 pb-5" class="text-center">
+                <h1 class="position-relative d-inline-block ms-4">What clients say!</h1>
+            </div>
+        <br/>
+        <br/>
+                <div class="d-flex img-flex">
+                    <div class=" col-3">
+                        <ion-card>
+                            <ion-card-header>
+                              <ion-card-title>
+                                <ion-item>
+                                <ion-avatar slot="start">
+                                  <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                                </ion-avatar>
+                                <ion-label>Item Avatar
+                                    <br/>Live Simple
+                                </ion-label>
+                              </ion-item>
+                            </ion-card-title>
+                              
+                            </ion-card-header>
+                          
+                            <ion-card-content>
+                              Here's a small text description for the card content. Nothing more, nothing less.
+                            </ion-card-content>
+                          </ion-card> 
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class=" col-3">
+                        <ion-card>
+                            <ion-card-header>
+                              <ion-card-title>
+                                <ion-item>
+                                    <ion-avatar slot="start">
+                                      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                                    </ion-avatar>
+                                    <ion-label>Item Avatar
+                                        <br/>Live Simple
+                                    </ion-label>
+                                  </ion-item>
+                              </ion-card-title>
+                          
+                            </ion-card-header>
+                          
+                            <ion-card-content>
+                              Here's a small text description for the card content. Nothing more, nothing less.
+                            </ion-card-content>
+                          </ion-card>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class=" col-3">
+                        <ion-card>
+                            <ion-card-header>
+                              <ion-card-title>
+                                <ion-item>
+                                    <ion-avatar slot="start">
+                                      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                                    </ion-avatar>
+                                    <ion-label>Item Avatar
+                                        <br/>Live Simple
+                                    </ion-label>
+                                  </ion-item>
+                              </ion-card-title>
+                              
+                            </ion-card-header>
+                          
+                            <ion-card-content>
+                              Here's a small text description for the card content. Nothing more, nothing less.
+                            </ion-card-content>
+                          </ion-card>
+                    </div>
+                </div>
+        </div> 
+    </section>
+</ion-header>
+
+
+
+<ion-header>
+    <section class="page-section" class="text-align-center">
+        <div class="container">
+            <div class="title pt-3 pb-5" class="text-center">
+                <h1 class="position-relative d-inline-block ms-4">Our partners</h1>
+            </div>
+        <br/>
+        <br/>
+            <div class="d-flex img-flex">
+                <div class=" col-3">
+                    <ion-card>
+                        <ion-card-header>
+                          <ion-card-title>Card Title</ion-card-title>
+                          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Here's a small text description for the card content. Nothing more, nothing less.
+                        </ion-card-content>
+                      </ion-card> 
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class=" col-3">
+                    <ion-card>
+                        <ion-card-header>
+                          <ion-card-title>Card Title</ion-card-title>
+                          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Here's a small text description for the card content. Nothing more, nothing less.
+                        </ion-card-content>
+                      </ion-card>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class=" col-3">
+                    <ion-card>
+                        <ion-card-header>
+                          <ion-card-title>Arienne McCoy</ion-card-title>
+                          <ion-card-subtitle>Live Simple</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Here's a small text description for the card content. Nothing more, nothing less.
+                        </ion-card-content>
+                      </ion-card>
+                </div>
+            </div>
+    </div> 
+    </section>
+</ion-header>
+
+
+
+<ion-header id="contacter">
+    <section class="page-section"  class="text-align-center">
+        <div class="container">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          
+            <div class="d-flex img-flex">
+                <div class=" col-3">
+                    <div class="title pt-3 pb-5" class="text-center">
+                        <h3 class="position-relative d-inline-block ms-4" class="col-lg-9 order-lg-1 text-center text-lg-start">Ready to enter new Market?</h3>
+                    </div>
+                    <p> Just leave us your contacte
+                        we will answer all your questions in a format 
+                        convenient for you.
+                    </p>
+
+                    <ion-item>
+                        <ion-input label="Default input"></ion-input>
+                        
+                      </ion-item>
+                </div>
+            </div>
+    </div>   <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    <br/>
+</ion-header>
+</ion-content>
+
 </ion-app>
